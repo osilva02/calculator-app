@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; 
+    color:hsl(35, 100%, 55%); 
+}
+
+#calculator{
+
+    font-size: Arial, Helvetica, sans-serif;
+    background-color:hsl(0, 0%, 15%);
+    border-radius: 1em;
+    max-width: 23em;
+    overflow: hidden;
+}
+
+
+#display{
+    width: 100%;
+    padding: 0.1em;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: gray;
+    color: white;
+
+}
+
+
+button{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 2em;
+    border:none;
+    background-color:hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight:  bold;
+    cursor: pointer;
+    
+
+}
+
+/* Arrange the Buttons as a grid using Div Id */
+#keys {
+    display: grid;
+
+    /* fr : fraction units, this 4 coloums , and arrange 1 fr evenly */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0.5em;
+    padding: 1.5em;
+    
+
+}
+
+button:hover{    
+    background-color:hsl(0, 0%, 40%);
+    
+}
+button:active{
+    background-color:hsl(0, 0%, 50%);
+}
+
+.operator-btn{
+    background-color:hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover{
+    background-color:hsl(35, 100%, 65%);
+}
+
+.operator-btn:active{
+    background-color:hsl(35, 100%, 75%);
+}
